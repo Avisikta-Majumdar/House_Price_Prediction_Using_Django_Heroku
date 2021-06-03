@@ -22,7 +22,9 @@ Link: https://housepriceprediction-india.herokuapp.com/
 
 
 ![ML](Screenshot/hpp.gif)
-
+<img src="Screenshot/hpp.gif" 
+     width="400" 
+     height="500" />
 ## Future Scope :
 * Use multiple Algorithms
 * Update the Front-End 
