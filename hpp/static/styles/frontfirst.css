@@ -1,0 +1,84 @@
+.sup2{
+    text-align : center;
+    background: linear-gradient(45deg, #990000, #262673, #660066);
+	background-size: 400% 400%;
+	animation: change-gradient 10s ease-in-out infinite;
+	margin: 30px 25px;
+    padding: 30px;
+	font-size: 25px;
+}
+@keyframes change-gradient {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.heading{
+	color: #ffffff;
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.submit{
+    background: #f9f9f9;
+   	border: 2px solid #000000;
+    border-radius: 1000px;
+	margin-top: 20px;
+    margin-left: 650px;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+   	font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+
+.submit:hover{
+    color: #4d089a;
+    border: 2px solid #4d089a
+}
+
+.intro{
+	text-align: center;
+	padding: 15px;
+	border-style: dashed;
+	border-width: 5px;
+	color: red;
+	font-size: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+.form-control{
+    font-size: 30px;
+	width: 350px;
+    height: 40px;
+    border-radius: 1000px;
+    margin-top: 20px;
+	margin-left: 550px;
+    text-align: center;
+}
+
+.city{
+	font-size: 35px;
+	font-family: Times New Roman;
+	color: darkblue;
+	text-align: center;
+}
+
+.usrnm{
+	width: 350px;
+    height: 40px;
+    border-radius: 1000px;
+    margin-top: 20px;
+	margin-left: 550px;
+    text-align: center;
+}

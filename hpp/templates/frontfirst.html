@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>House Price Prediction</title>
+        <link rel="stylesheet" href="{% static 'styles/frontfirst.css'%}">
+            <h2 class="sup2" style="color: aliceblue;"><span class="heading">House Price Prediction For Kolkata & Mumbai</span></h2>
+    </head>
+<body style="background-image: url({% static 'images/back.jpg'%})">
+<div>
+    <div>
+        <h3 class="intro">Python Django Simple Dropdown List Binding Populate Data</h3>
+        <p class="city"><b>Choose name of the city you want to search : </b></p>
+        <form method="POST" action="home">
+            {% csrf_token %}
+            <input type="text" class="form-control" name="city" list="city" placeholder="Choose location">
+                <datalist name="city" id="city">
+                    {% for results in showcity %}
+                    <option value="{{results.name}}">{{results.name}}</option>
+                    {% endfor %}
+                </datalist>
+    <br>
+        <input type="submit" value="submit" name="home" class="submit">
+    </form>
+    </div>
+    </div>
+</body>
+</html>

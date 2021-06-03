@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>House Price Prediction</title>
+
+        <link rel="stylesheet" href="{% static 'styles/frontp.css'%}">
+            <h2 class='heading'><span class="heading_font">House Price Prediction For Kolkata & Mumbai</span></h2>
+    </head>
+
+    <body style="background-image: url({% static 'images/back.jpg'%})">
+    {% if resultpredict|length %}
+        <footer style="text-align: center; margin-top:10px; margin-left: 450px; margin-right: 400px;  font-size: 30px; border: 15px solid blue; padding: 25px; background-image: linear-gradient(to bottom right, #CD5C5C, #90EE90)">
+            <p class="result">The Prediction price is: </p>
+            Rs. {{resultpredict}}</footer>
+    {% else %}
+    <div class="td_class2">
+        <table>
+            <tr>
+                <td class="td_class">
+                    <form action="home2" method="POST">
+                        {% csrf_token %}
+                        <div >
+                            <label for="town"></label><br>
+                            <input type="text" class="form-input-1" name="town" list="town" placeholder="choose-town-name"><br>
+                            <datalist name="town" id="town">
+                                <option><h2 class="formm">Location</h2></option>
+                                {% for res in result %}
+                                <option>{{res}}</option>
+                                {% endfor %}
+                            </datalist>
+                        </div>
+                        <div >
+                            <label for="BHK"></label><br>
+                            <input type="text" class="form-input-1" name="BHK" list="BHK" placeholder="BHK eg. 2"><br>
+                            <datalist name= "BHK" id="BHK">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                </datalist>
+                                <label for="Area type"></label><br>
+                            <input type="text" class="form-input-1" name="Area Type" list="Area_types" placeholder="Area Type eg. Plot Area"><br>
+                        </div>
+                        <div class="prepos">
+                            <label for="button"></label><br>
+                            <input class="my-cta-button" type="submit" value="Predict">
+                        </div>
+        	        </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    {% endif %}
+    </body>
+</html>
