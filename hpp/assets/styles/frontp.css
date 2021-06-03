@@ -1,0 +1,100 @@
+/* Website Title */
+.container1{
+    padding: 30px;
+	position: relative;
+	background: linear-gradient(45deg, #990000, #262673, #660066);
+	background-size: 400% 400%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+.first{
+	margin: 30px 25px;
+    padding: 30px;
+	position: relative;
+	background: linear-gradient(45deg, #990000, #262673, #660066);
+	background-size: 400% 400%;
+	animation: change-gradient 10s ease-in-out infinite;
+	text-align: center;
+}
+
+.heading{
+	text-align: center;
+}
+
+.heading_font{
+    color: #ffffff;
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	font-weight: normal;
+}
+
+.ml-container{
+	margin: 30px 0;
+	flex: 1 0 auto;
+}
+
+@keyframes change-gradient {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.form-input-1 {
+	text-align: center;
+	float: left;
+	border-radius: 1000px;
+	width: 350px ;
+	height: 40px;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.form-input-2 {
+	text-align: center;
+	float: right;
+	width: 350px ;
+	height: 40px;
+	margin-top: 25px;
+	margin-right: 20px;
+	border-radius: 1000px;
+}
+.texter{
+    text-align: center;
+}
+
+.form-input-3{
+	text-align: center;
+
+	width: 350px ;
+	height: 40px;
+	margin-top: 125px;
+	border-radius: 1000px;
+}
+
+.my-cta-button{
+	background: #f9f9f9;
+   	border: 2px solid #000000;
+    border-radius: 1000px;
+	margin-top: 20px;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+   	font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+.prepos{
+	text-align: center;
+}
+.my-cta-button:hover{
+    color: #4d089a;
+    border: 2px solid #4d089a;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
