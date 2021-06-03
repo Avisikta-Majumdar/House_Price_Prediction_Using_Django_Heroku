@@ -21,10 +21,8 @@ The web app has been build using basic HTML, CSS, Javascript, Django and Herkou.
 Link: https://housepriceprediction-india.herokuapp.com/
 
 
-![ML](Screenshot/hpp.gif)
-<img src="Screenshot/hpp.gif" 
-     width="400" 
-     height="500" />
+
+<center><img src="Screenshot/hpp.gif"    width="800" height="800" />
 ## Future Scope :
 * Use multiple Algorithms
 * Update the Front-End 
