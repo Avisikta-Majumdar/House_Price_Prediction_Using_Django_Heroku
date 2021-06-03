@@ -1,0 +1,85 @@
+.heading{
+	margin: 30px 25px;
+    padding: 30px;
+	position: relative;
+	background: linear-gradient(45deg, #990000, #262673, #660066);
+	background-size: 400% 400%;
+	animation: change-gradient 10s ease-in-out infinite;
+	text-align: center;
+}
+.heading_font{
+    color: black;
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	font-weight: normal;
+}
+
+.ml-container{
+	margin: 30px 0;
+	flex: 1 0 auto;
+}
+
+@keyframes change-gradient {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.form-input-1 {
+	text-align: center;
+	border-radius: 1000px;
+	width: 350px ;
+	height: 40px;
+}
+
+.formm{
+    text-align: center;
+	border-radius: 1000px;
+	width: 350px ;
+	height: 40px;
+
+}
+
+.my-cta-button{
+	background: #f9f9f9;
+   	border: 2px solid #000000;
+    border-radius: 1000px;
+    padding: 10px 36px;
+    color: #000000;
+
+   	font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+.prepos{
+	text-align: center;
+}
+.my-cta-button:hover{
+    color: #4d089a;
+    border: 2px solid #4d089a;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+.td_class{
+	height: auto;
+    width: 400px;
+    text-align: center;
+    border-radius: 25px;
+    /background-image: linear-gradient(to bottom, blue, cyan, white);/
+    color: #800000;
+
+}
+
+.td_class2{
+	align-items: center;
+	margin-left: 36%;
+	margin-right: 25%;
+}
