@@ -22,7 +22,7 @@ Link: https://housepriceprediction-india.herokuapp.com/
 
 
 
-<center><img src="Screenshot/hpp.gif"    width="800" height="800" />
+<center><img src="Screenshot/hpp.gif"    width="600" height="600" />
 ## Future Scope :
 * Use multiple Algorithms
 * Update the Front-End 
