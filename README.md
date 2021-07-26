@@ -15,7 +15,7 @@ The analysis and model creation can be found in the .ipynb file.
 
 The main packages used are numpy, pandas, matplotlib, seaborn and sklearn joblib .  
 
-## Deployemnt :
+## Deployment :
 The web app has been build using basic HTML, CSS, Javascript, Django and Herkou.
 
 Link: https://housepriceprediction-india.herokuapp.com/
