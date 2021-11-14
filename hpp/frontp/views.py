@@ -6,7 +6,7 @@ import joblib
 warnings.filterwarnings("ignore")
 # Create your views here.
 from .models import city
-val = None
+val = None 
 
 def homie(request):
     city1 = city()
